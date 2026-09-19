@@ -3,69 +3,262 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>PR IPNU & IPPNU Prambatan Lor</title>
 
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
 body{
-    font-family:Arial,sans-serif;
-    margin:0;
-    background:#f5f5f5;
+background:#f4f7f5;
+line-height:1.6;
+color:#333;
 }
 
 header{
-    background:#0B7A3D;
-    color:white;
-    text-align:center;
-    padding:60px 20px;
+background:linear-gradient(135deg,#0B7A3D,#149647);
+color:white;
+padding:80px 20px;
+text-align:center;
+}
+
+header h1{
+font-size:3rem;
+}
+
+header p{
+margin-top:10px;
+font-size:1.1rem;
+}
+
+nav{
+background:white;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+nav a{
+text-decoration:none;
+margin:0 15px;
+color:#0B7A3D;
+font-weight:bold;
 }
 
 section{
-    max-width:1000px;
-    margin:auto;
-    padding:30px;
+padding:70px 10%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:30px;
+color:#0B7A3D;
+font-size:2rem;
 }
 
 .card{
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 3px 12px rgba(0,0,0,.08);
+margin-bottom:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.program{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery div{
+background:white;
+height:200px;
+border-radius:10px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#999;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.contact{
+text-align:center;
+}
+
+.wa{
+display:inline-block;
+background:#25D366;
+color:white;
+padding:12px 25px;
+border-radius:8px;
+text-decoration:none;
+margin-top:15px;
 }
 
 footer{
-    background:#0B7A3D;
-    color:white;
-    text-align:center;
-    padding:20px;
+background:#0B7A3D;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+header h1{
+font-size:2rem;
+}
+
+nav a{
+display:block;
+margin:10px 0;
+}
 }
 </style>
 </head>
-
 <body>
 
 <header>
 <h1>PR IPNU & IPPNU PRAMBATAN LOR</h1>
-<p>Website Resmi Organisasi Pelajar Nahdlatul Ulama</p>
+<p>Berkhidmat • Belajar • Berjuang • Bertakwa</p>
 </header>
 
-<section>
+<nav>
+#profilProfil</a>
+#visiVisi Misi</a>
+#pengurusPengurus</a>
+#programProgram</a>
+#galeriGaleri</a>
+#kontakKontak</a>
+</nav>
+
+<section id="profil">
+<h2 class="section-title">Profil Organisasi</h2>
 <div class="card">
-<h2>Profil Organisasi</h2>
 <p>
-Silakan edit bagian ini sesuai profil PR IPNU & IPPNU Prambatan Lor.
+Isi profil organisasi PR IPNU & IPPNU Prambatan Lor di sini.
+Silakan edit sesuai kebutuhan.
 </p>
+</div>
+</section>
 
-<h2>Visi & Misi</h2>
+<section id="visi">
+<h2 class="section-title">Visi & Misi</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Visi</h3>
 <p>
-Silakan isi visi dan misi organisasi di sini.
+[Tulis Visi Organisasi]
 </p>
+</div>
 
-<h2>Program Kerja</h2>
+<div class="card">
+<h3>Misi</h3>
 <ul>
-<li>Program 1</li>
-<li>Program 2</li>
-<li>Program 3</li>
+<li>[Misi 1]</li>
+<li>[Misi 2]</li>
+<li>[Misi 3]</li>
 </ul>
+</div>
+
+</div>
+</section>
+
+<section id="pengurus">
+<h2 class="section-title">Kepengurusan</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Ketua IPNU</h3>
+<p>[Isi Nama Ketua IPNU]</p>
+</div>
+
+<div class="card">
+<h3>Ketua IPPNU</h3>
+<p>[Isi Nama Ketua IPPNU]</p>
+</div>
+
+<div class="card">
+<h3>Masa Khidmat</h3>
+<p>[Isi Masa Khidmat]</p>
+</div>
+
+</div>
+</section>
+
+<section id="program">
+<h2 class="section-title">Program Kerja</h2>
+
+<div class="grid">
+
+<div class="program">
+<h3>MAKESTA</h3>
+<p>Kaderisasi anggota baru.</p>
+</div>
+
+<div class="program">
+<h3>Rutinan</h3>
+<p>Yasin & Tahlil serta penguatan Aswaja.</p>
+</div>
+
+<div class="program">
+<h3>Bakti Sosial</h3>
+<p>Kegiatan sosial kemasyarakatan.</p>
+</div>
+
+<div class="program">
+<h3>Ziarah Ulama</h3>
+<p>Mengenang perjuangan para ulama.</p>
+</div>
+
+</div>
+</section>
+
+<section id="galeri">
+<h2 class="section-title">Galeri Kegiatan</h2>
+
+<div class="gallery">
+<div>Foto Kegiatan 1</div>
+<div>Foto Kegiatan 2</div>
+<div>Foto Kegiatan 3</div>
+<div>Foto Kegiatan 4</div>
+</div>
+
+</section>
+
+<section id="kontak">
+<h2 class="section-title">Kontak</h2>
+
+<div class="card contact">
+
+<p>📍 PR IPNU & IPPNU Prambatan Lor</p>
+<p>📧 [Email Organisasi]</p>
+<p>📱 [Nomor WhatsApp]</p>
+<p>📷 [Instagram]</p>
+
+#Hubungi Kami</a>
+
 </div>
 </section>
 
