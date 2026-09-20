@@ -6,49 +6,77 @@
 
 <title>PR IPNU & IPPNU Prambatan Lor</title>
 
+ipnu.png
+
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
+font-family:Segoe UI,sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-background:#f4f7f5;
-line-height:1.6;
-color:#333;
+background:#f5f7f5;
 }
 
 header{
-background:linear-gradient(135deg,#0B7A3D,#149647);
+background:linear-gradient(135deg,#0B7A3D,#1AAE5F);
 color:white;
 padding:80px 20px;
 text-align:center;
+position:relative;
+overflow:hidden;
+}
+
+header::before{
+content:"✦ ✦ ✦ ✦ ✦ ✦ ✦";
+position:absolute;
+font-size:120px;
+opacity:.08;
+left:0;
+top:20px;
+width:100%;
+}
+
+.logo{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:30px;
+flex-wrap:wrap;
+margin-bottom:20px;
+}
+
+.logo img{
+width:110px;
 }
 
 header h1{
 font-size:3rem;
+margin-bottom:10px;
 }
 
 header p{
-margin-top:10px;
-font-size:1.1rem;
+font-size:1.2rem;
 }
 
 nav{
 background:white;
 padding:15px;
-text-align:center;
 position:sticky;
 top:0;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
+z-index:999;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+text-align:center;
 }
 
 nav a{
+color:#0B7A3D;
 text-decoration:none;
 margin:0 15px;
-color:#0B7A3D;
 font-weight:bold;
 }
 
@@ -56,19 +84,18 @@ section{
 padding:70px 10%;
 }
 
-.section-title{
+.title{
 text-align:center;
-margin-bottom:30px;
 color:#0B7A3D;
-font-size:2rem;
+margin-bottom:30px;
 }
 
 .card{
 background:white;
 padding:25px;
-border-radius:15px;
-box-shadow:0 3px 12px rgba(0,0,0,.08);
-margin-bottom:20px;
+border-radius:20px;
+margin-bottom:25px;
+box-shadow:0 3px 15px rgba(0,0,0,.08);
 }
 
 .grid{
@@ -78,10 +105,11 @@ gap:20px;
 }
 
 .program{
-background:white;
+background:#fff;
 padding:20px;
-border-radius:12px;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
+border-radius:15px;
+text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
 }
 
 .gallery{
@@ -91,54 +119,84 @@ gap:20px;
 }
 
 .gallery div{
-background:white;
-height:200px;
-border-radius:10px;
+height:220px;
+background:linear-gradient(135deg,#0B7A3D,#1AAE5F);
+border-radius:15px;
+color:white;
 display:flex;
-align-items:center;
 justify-content:center;
-color:#999;
-box-shadow:0 2px 8px rgba(0,0,0,.1);
+align-items:center;
+font-weight:bold;
 }
 
-.contact{
-text-align:center;
-}
-
-.wa{
+.btn{
+background:#FFD700;
+padding:12px 20px;
 display:inline-block;
+margin-top:15px;
+text-decoration:none;
+border-radius:30px;
+color:black;
+font-weight:bold;
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
 background:#25D366;
 color:white;
-padding:12px 25px;
-border-radius:8px;
+padding:15px 20px;
+border-radius:50px;
 text-decoration:none;
-margin-top:15px;
+font-weight:bold;
+box-shadow:0 4px 10px rgba(0,0,0,.2);
 }
 
 footer{
 background:#0B7A3D;
 color:white;
 text-align:center;
-padding:20px;
+padding:25px;
+margin-top:30px;
 }
 
 @media(max-width:768px){
+
 header h1{
 font-size:2rem;
 }
 
+.logo img{
+width:80px;
+}
+
 nav a{
 display:block;
-margin:10px 0;
+margin:8px;
 }
+
 }
+
 </style>
 </head>
 <body>
 
 <header>
+
+<div class="logo">
+ipnu.png
+ippnu.png
+</div>
+
 <h1>PR IPNU & IPPNU PRAMBATAN LOR</h1>
-<p>Berkhidmat • Belajar • Berjuang • Bertakwa</p>
+
+<p>
+Berkhidmat • Belajar • Berjuang • Bertakwa
+</p>
+
+#profilProfil Organisasi</a>
+
 </header>
 
 <nav>
@@ -151,33 +209,30 @@ margin:10px 0;
 </nav>
 
 <section id="profil">
-<h2 class="section-title">Profil Organisasi</h2>
+<h2 class="title">Profil Organisasi</h2>
+
 <div class="card">
-<p>
-Isi profil organisasi PR IPNU & IPPNU Prambatan Lor di sini.
-Silakan edit sesuai kebutuhan.
-</p>
+Isi profil PR IPNU & IPPNU Prambatan Lor di sini.
 </div>
+
 </section>
 
 <section id="visi">
-<h2 class="section-title">Visi & Misi</h2>
+<h2 class="title">Visi & Misi</h2>
 
 <div class="grid">
 
 <div class="card">
 <h3>Visi</h3>
-<p>
-[Tulis Visi Organisasi]
-</p>
+<p>Tulis visi organisasi di sini.</p>
 </div>
 
 <div class="card">
 <h3>Misi</h3>
 <ul>
-<li>[Misi 1]</li>
-<li>[Misi 2]</li>
-<li>[Misi 3]</li>
+<li>Misi 1</li>
+<li>Misi 2</li>
+<li>Misi 3</li>
 </ul>
 </div>
 
@@ -185,58 +240,61 @@ Silakan edit sesuai kebutuhan.
 </section>
 
 <section id="pengurus">
-<h2 class="section-title">Kepengurusan</h2>
+<h2 class="title">Kepengurusan</h2>
 
 <div class="grid">
 
 <div class="card">
 <h3>Ketua IPNU</h3>
-<p>[Isi Nama Ketua IPNU]</p>
+<p>Isi Nama</p>
 </div>
 
 <div class="card">
 <h3>Ketua IPPNU</h3>
-<p>[Isi Nama Ketua IPPNU]</p>
+<p>Isi Nama</p>
 </div>
 
 <div class="card">
 <h3>Masa Khidmat</h3>
-<p>[Isi Masa Khidmat]</p>
+<p>2026 - 2028</p>
 </div>
 
 </div>
 </section>
 
 <section id="program">
-<h2 class="section-title">Program Kerja</h2>
+
+<h2 class="title">Program Kerja</h2>
 
 <div class="grid">
 
 <div class="program">
 <h3>MAKESTA</h3>
-<p>Kaderisasi anggota baru.</p>
+<p>Kaderisasi Anggota Baru</p>
+</div>
+
+<div class="program">
+<h3>LAKMUD</h3>
+<p>Latihan Kader Muda</p>
 </div>
 
 <div class="program">
 <h3>Rutinan</h3>
-<p>Yasin & Tahlil serta penguatan Aswaja.</p>
+<p>Kegiatan Keagamaan</p>
 </div>
 
 <div class="program">
 <h3>Bakti Sosial</h3>
-<p>Kegiatan sosial kemasyarakatan.</p>
-</div>
-
-<div class="program">
-<h3>Ziarah Ulama</h3>
-<p>Mengenang perjuangan para ulama.</p>
+<p>Pengabdian Masyarakat</p>
 </div>
 
 </div>
+
 </section>
 
 <section id="galeri">
-<h2 class="section-title">Galeri Kegiatan</h2>
+
+<h2 class="title">Galeri Kegiatan</h2>
 
 <div class="gallery">
 <div>Foto Kegiatan 1</div>
@@ -248,22 +306,32 @@ Silakan edit sesuai kebutuhan.
 </section>
 
 <section id="kontak">
-<h2 class="section-title">Kontak</h2>
 
-<div class="card contact">
+<h2 class="title">Kontak</h2>
 
-<p>📍 PR IPNU & IPPNU Prambatan Lor</p>
-<p>📧 [Email Organisasi]</p>
-<p>📱 [Nomor WhatsApp]</p>
-<p>📷 [Instagram]</p>
+<div class="card">
 
-#Hubungi Kami</a>
+<p>📍 Prambatan Lor</p>
+<p>📧 isi@email.com</p>
+<p>📱 08xxxxxxxxxx</p>
+<p>📷 @instagram</p>
 
 </div>
+
 </section>
 
+#
+WhatsApp
+</a>
+
 <footer>
-© PR IPNU & IPPNU Prambatan Lor
+
+<h3>PR IPNU & IPPNU PRAMBATAN LOR</h3>
+
+<p>
+Berkhidmat untuk Pelajar Nahdlatul Ulama
+</p>
+
 </footer>
 
 </body>
