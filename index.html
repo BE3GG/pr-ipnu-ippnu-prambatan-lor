@@ -6,96 +6,106 @@
 
 <title>PR IPNU & IPPNU Prambatan Lor</title>
 
-ipnu.png ippnu.png
-
 <style>
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:Segoe UI,sans-serif;
-scroll-behavior:smooth;
 }
 
 body{
-background:#f5f7f5;
+background:#f4f8f4;
 }
 
-header{
-background:linear-gradient(135deg,#0B7A3D,#1AAE5F);
-color:white;
-padding:80px 20px;
-text-align:center;
-position:relative;
-overflow:hidden;
-}
-
-header::before{
-content:"✦ ✦ ✦ ✦ ✦ ✦ ✦";
-position:absolute;
-font-size:120px;
-opacity:.08;
+/* Motif pinggir */
+body::before{
+content:"";
+position:fixed;
+top:0;
 left:0;
-top:20px;
 width:100%;
+height:100%;
+pointer-events:none;
+border:12px solid #0B7A3D;
+opacity:.2;
 }
 
-.logo{
+.hero{
+background:linear-gradient(135deg,#0B7A3D,#17a85a);
+color:white;
+text-align:center;
+padding:80px 20px;
+position:relative;
+}
+
+.hero::after{
+content:"✦ ✦ ✦ ✦ ✦ ✦ ✦ ✦";
+font-size:90px;
+opacity:.08;
+position:absolute;
+top:20px;
+left:0;
+right:0;
+}
+
+.logo-area{
 display:flex;
 justify-content:center;
 align-items:center;
 gap:30px;
-flex-wrap:wrap;
 margin-bottom:20px;
+flex-wrap:wrap;
 }
 
-.logo img{
+.logo-area img{
 width:110px;
+height:auto;
+background:white;
+padding:5px;
+border-radius:50%;
 }
 
-header h1{
+.hero h1{
 font-size:3rem;
 margin-bottom:10px;
 }
 
-header p{
+.hero p{
 font-size:1.2rem;
 }
 
 nav{
 background:white;
 padding:15px;
+text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
 position:sticky;
 top:0;
-z-index:999;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-text-align:center;
 }
 
 nav a{
-color:#0B7A3D;
 text-decoration:none;
-margin:0 15px;
+margin:0 12px;
+color:#0B7A3D;
 font-weight:bold;
 }
 
 section{
-padding:70px 10%;
-}
-
-.title{
-text-align:center;
-color:#0B7A3D;
-margin-bottom:30px;
+padding:60px 10%;
 }
 
 .card{
 background:white;
 padding:25px;
 border-radius:20px;
-margin-bottom:25px;
-box-shadow:0 3px 15px rgba(0,0,0,.08);
+box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+
+.title{
+text-align:center;
+margin-bottom:30px;
+color:#0B7A3D;
 }
 
 .grid{
@@ -105,52 +115,10 @@ gap:20px;
 }
 
 .program{
-background:#fff;
+background:white;
 padding:20px;
 border-radius:15px;
-text-align:center;
 box-shadow:0 2px 10px rgba(0,0,0,.08);
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.gallery div{
-height:220px;
-background:linear-gradient(135deg,#0B7A3D,#1AAE5F);
-border-radius:15px;
-color:white;
-display:flex;
-justify-content:center;
-align-items:center;
-font-weight:bold;
-}
-
-.btn{
-background:#FFD700;
-padding:12px 20px;
-display:inline-block;
-margin-top:15px;
-text-decoration:none;
-border-radius:30px;
-color:black;
-font-weight:bold;
-}
-
-.whatsapp{
-position:fixed;
-right:20px;
-bottom:20px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 4px 10px rgba(0,0,0,.2);
 }
 
 footer{
@@ -158,35 +126,31 @@ background:#0B7A3D;
 color:white;
 text-align:center;
 padding:25px;
-margin-top:30px;
 }
 
 @media(max-width:768px){
 
-header h1{
+.hero h1{
 font-size:2rem;
 }
 
-.logo img{
+.logo-area img{
 width:80px;
 }
-
-nav a{
-display:block;
-margin:8px;
 }
-
-}
-
 </style>
+
 </head>
 <body>
 
-<header>
+<header class="hero">
 
-<div class="logo">
+<div class="logo-area">
+
 ipnu.png
+
 ippnu.png
+
 </div>
 
 <h1>PR IPNU & IPPNU PRAMBATAN LOR</h1>
@@ -195,8 +159,6 @@ ippnu.png
 Berkhidmat • Belajar • Berjuang • Bertakwa
 </p>
 
-#profilProfil Organisasi</a>
-
 </header>
 
 <nav>
@@ -204,7 +166,6 @@ Berkhidmat • Belajar • Berjuang • Bertakwa
 #visiVisi Misi</a>
 #pengurusPengurus</a>
 #programProgram</a>
-#galeriGaleri</a>
 #kontakKontak</a>
 </nav>
 
@@ -212,54 +173,49 @@ Berkhidmat • Belajar • Berjuang • Bertakwa
 <h2 class="title">Profil Organisasi</h2>
 
 <div class="card">
-Isi profil PR IPNU & IPPNU Prambatan Lor di sini.
+Isi profil organisasi di sini.
 </div>
 
 </section>
 
 <section id="visi">
+
 <h2 class="title">Visi & Misi</h2>
 
 <div class="grid">
 
 <div class="card">
 <h3>Visi</h3>
-<p>Tulis visi organisasi di sini.</p>
+<p>Tulis visi organisasi.</p>
 </div>
 
 <div class="card">
 <h3>Misi</h3>
-<ul>
-<li>Misi 1</li>
-<li>Misi 2</li>
-<li>Misi 3</li>
-</ul>
+<p>Tulis misi organisasi.</p>
 </div>
 
 </div>
+
 </section>
 
 <section id="pengurus">
+
 <h2 class="title">Kepengurusan</h2>
 
 <div class="grid">
 
 <div class="card">
 <h3>Ketua IPNU</h3>
-<p>Isi Nama</p>
+<p>Isi nama</p>
 </div>
 
 <div class="card">
 <h3>Ketua IPPNU</h3>
-<p>Isi Nama</p>
-</div>
-
-<div class="card">
-<h3>Masa Khidmat</h3>
-<p>2026 - 2028</p>
+<p>Isi nama</p>
 </div>
 
 </div>
+
 </section>
 
 <section id="program">
@@ -270,37 +226,20 @@ Isi profil PR IPNU & IPPNU Prambatan Lor di sini.
 
 <div class="program">
 <h3>MAKESTA</h3>
-<p>Kaderisasi Anggota Baru</p>
 </div>
 
 <div class="program">
 <h3>LAKMUD</h3>
-<p>Latihan Kader Muda</p>
 </div>
 
 <div class="program">
 <h3>Rutinan</h3>
-<p>Kegiatan Keagamaan</p>
 </div>
 
 <div class="program">
 <h3>Bakti Sosial</h3>
-<p>Pengabdian Masyarakat</p>
 </div>
 
-</div>
-
-</section>
-
-<section id="galeri">
-
-<h2 class="title">Galeri Kegiatan</h2>
-
-<div class="gallery">
-<div>Foto Kegiatan 1</div>
-<div>Foto Kegiatan 2</div>
-<div>Foto Kegiatan 3</div>
-<div>Foto Kegiatan 4</div>
 </div>
 
 </section>
@@ -310,28 +249,14 @@ Isi profil PR IPNU & IPPNU Prambatan Lor di sini.
 <h2 class="title">Kontak</h2>
 
 <div class="card">
-
-<p>📍 Prambatan Lor</p>
-<p>📧 isi@email.com</p>
-<p>📱 08xxxxxxxxxx</p>
-<p>📷 @instagram</p>
-
+<p>WhatsApp: Isi Nomor</p>
+<p>Instagram: Isi Instagram</p>
 </div>
 
 </section>
 
-#
-WhatsApp
-</a>
-
 <footer>
-
-<h3>PR IPNU & IPPNU PRAMBATAN LOR</h3>
-
-<p>
-Berkhidmat untuk Pelajar Nahdlatul Ulama
-</p>
-
+PR IPNU & IPPNU PRAMBATAN LOR
 </footer>
 
 </body>
